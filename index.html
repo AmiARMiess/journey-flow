@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JourneyFlow | Customer Journey Optimization Platform</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Journey<span class="highlight">Flow</span></a>
+            <ul class="nav-links">
+                <li><a href="#framework">Framework</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#pricing" class="btn-primary">Get Started</a>
+            <div class="hamburger">
+                <i class="ph ph-list"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-text fade-in-up">
+                <span class="badge">New: AI-Powered Onboarding</span>
+                <h1>Master the <span class="gradient-text">Customer Journey</span> Optimization Framework</h1>
+                <p>Stop losing customers in the gaps. Our platform helps you map, measure, and optimize every touchpoint from Discovery to Advocacy.</p>
+                <div class="hero-buttons">
+                    <a href="#framework" class="btn-primary">Explore Framework</a>
+                    <a href="#pricing" class="btn-secondary">View Pricing</a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in-up delay-1">
+                <div class="abstract-circle">
+                    <div class="orbit orbit-1"></div>
+                    <div class="orbit orbit-2"></div>
+                    <i class="ph-duotone ph-arrows-out-line-horizontal main-icon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Interactive Journey Simulator -->
+    <section id="framework" class="framework-section">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2>The 6-Stage Optimization Cycle</h2>
+                <p>Click each stage to see how we optimize the experience.</p>
+            </div>
+
+            <div class="simulator-container">
+                <div class="journey-wheel fade-in-up">
+                    <div class="wheel-segment seg-1 active" data-step="1"><i class="ph ph-magnifying-glass"></i></div>
+                    <div class="wheel-segment seg-2" data-step="2"><i class="ph ph-check-square"></i></div>
+                    <div class="wheel-segment seg-3" data-step="3"><i class="ph ph-shopping-cart"></i></div>
+                    <div class="wheel-segment seg-4" data-step="4"><i class="ph ph-star"></i></div>
+                    <div class="wheel-segment seg-5" data-step="5"><i class="ph ph-megaphone"></i></div>
+                    <div class="wheel-segment seg-6" data-step="6"><i class="ph ph-user"></i></div>
+                    <div class="center-hub">
+                        <span class="hub-text">Journey<br>Flow</span>
+                    </div>
+                </div>
+
+                <div class="content-panel fade-in-up delay-1">
+                    <div class="panel-header">
+                        <span class="step-number" id="step-num">01</span>
+                        <h3 id="step-title">Discovery</h3>
+                    </div>
+                    <p id="step-desc">The initial phase where potential customers become aware of a product or service through marketing, word-of-mouth, or online search.</p>
+                    <div class="metric-box">
+                        <span class="metric-label">Key Metric:</span>
+                        <span class="metric-value" id="step-metric">Impressions & Reach</span>
+                    </div>
+                    <button class="btn-outline" id="next-step-btn">Next Stage <i class="ph-bold ph-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2>Simple, Transparent Pricing</h2>
+                <p>Choose the plan that fits your growth stage.</p>
+                
+                <!-- Toggle Switch -->
+                <div class="pricing-toggle">
+                    <span class="toggle-label active" id="monthly-label">Monthly</span>
+                    <label class="switch">
+                        <input type="checkbox" id="pricing-checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="toggle-label" id="yearly-label">Yearly <span class="save-badge">Save 20%</span></span>
+                </div>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Starter Plan -->
+                <div class="pricing-card fade-in-up">
+                    <div class="card-header">
+                        <h3>Starter</h3>
+                        <p>For small teams getting started</p>
+                    </div>
+                    <div class="price-container">
+                        <span class="currency">$</span>
+                        <span class="amount" data-monthly="29" data-yearly="24">29</span>
+                        <span class="period">/mo</span>
+                    </div>
+                    <ul class="feature-list">
+                        <li><i class="ph-fill ph-check-circle"></i> 5 Journey Maps</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Basic Analytics</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Email Support</li>
+                        <li class="disabled"><i class="ph-fill ph-x-circle"></i> AI Recommendations</li>
+                    </ul>
+                    <a href="#" class="btn-secondary full-width">Get Started</a>
+                </div>
+
+                <!-- Pro Plan (Highlighted) -->
+                <div class="pricing-card popular fade-in-up delay-1">
+                    <div class="popular-tag">Most Popular</div>
+                    <div class="card-header">
+                        <h3>Professional</h3>
+                        <p>For growing brands & agencies</p>
+                    </div>
+                    <div class="price-container">
+                        <span class="currency">$</span>
+                        <span class="amount" data-monthly="79" data-yearly="64">79</span>
+                        <span class="period">/mo</span>
+                    </div>
+                    <ul class="feature-list">
+                        <li><i class="ph-fill ph-check-circle"></i> Unlimited Journey Maps</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Advanced Analytics</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Priority Support</li>
+                        <li><i class="ph-fill ph-check-circle"></i> AI Recommendations</li>
+                    </ul>
+                    <a href="#" class="btn-primary full-width">Start Free Trial</a>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card fade-in-up delay-2">
+                    <div class="card-header">
+                        <h3>Enterprise</h3>
+                        <p>For large scale operations</p>
+                    </div>
+                    <div class="price-container">
+                        <span class="currency">$</span>
+                        <span class="amount" data-monthly="199" data-yearly="159">199</span>
+                        <span class="period">/mo</span>
+                    </div>
+                    <ul class="feature-list">
+                        <li><i class="ph-fill ph-check-circle"></i> Custom Integrations</li>
+                        <li><i class="ph-fill ph-check-circle"></i> Dedicated Manager</li>
+                        <li><i class="ph-fill ph-check-circle"></i> SSO & Security</li>
+                        <li><i class="ph-fill ph-check-circle"></i> API Access</li>
+                    </ul>
+                    <a href="#" class="btn-secondary full-width">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="cta-section">
+        <div class="container cta-container fade-in-up">
+            <h2>Ready to Optimize Your Journey?</h2>
+            <p>Join 500+ brands using JourneyFlow to increase retention by 40%.</p>
+            <form class="cta-form">
+                <input type="email" placeholder="Enter your work email" required>
+                <button type="submit" class="btn-primary">Start Free Trial</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-col">
+                <a href="#" class="logo">Journey<span class="highlight">Flow</span></a>
+                <p>Empowering brands to create seamless customer experiences.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Integrations</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 JourneyFlow Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
